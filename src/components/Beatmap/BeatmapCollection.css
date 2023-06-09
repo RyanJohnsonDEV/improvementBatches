@@ -1,0 +1,78 @@
+.beatmap-collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 520px);
+  justify-content: center;
+  justify-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.title {
+  width: 30vw;
+  height: 70px;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  transition: background-color 0.1s ease-in;
+}
+
+.title button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 24px;
+  background-image: linear-gradient(
+    to left,
+    black 15%,
+    #9290fc 35%,
+    #c645b8 45%,
+    #ff4e6f 55%,
+    #f6f05c 65%,
+    #7cff4f 75%,
+    #4fc0ff 85%
+  );
+  color: transparent;
+  background-size: 100000%;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.batch-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.title:hover {
+  background-color: #1f292e;
+}
+
+.loading {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.loading > * {
+  margin: 0 2rem;
+}
+
+@media screen and (max-width: 1600px) {
+  .title {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    width: 95vw;
+  }
+}

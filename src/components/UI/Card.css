@@ -1,0 +1,8 @@
+.card {
+  border-radius: 30px;
+  background-color: transparent;
+  color: white;
+  padding: 1rem 3rem;
+  margin: 1rem;
+  overflow: hidden;
+}

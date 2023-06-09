@@ -1,0 +1,132 @@
+.beatmap-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.08s ease-in;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.complete-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 255, 0, 0.2);
+  display: flex;
+  align-items: center;
+  opacity: 0%;
+}
+
+.complete-overlay.complete {
+  opacity: 100%;
+}
+
+.fa-circle-info,
+.fa-download {
+  color: white;
+}
+
+.beatmap-container:hover {
+  opacity: 100%;
+}
+
+.beatmap-container:hover .complete-overlay {
+  background-color: red;
+}
+
+.beatmap-complete,
+.beatmap-download-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.beatmap-complete {
+  cursor: pointer;
+  text-align: center;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  text-shadow: none;
+  transition: 0.1s ease-in;
+}
+
+.container-check {
+  padding: 0.5rem;
+  border-radius: 100%;
+  transition: 0.1s ease-in;
+  background-color: gray;
+  color: white;
+}
+
+.container-check.complete {
+  background-color: lime;
+}
+
+.beatmap-complete:hover .container-check {
+  background-color: rgb(49, 148, 49);
+}
+
+.beatmap-complete:hover .container-check.complete {
+  background-color: rgb(0, 180, 0);
+}
+
+.beatmap-download-info {
+  position: absolute;
+  top: 50%;
+  right: 6rem;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.beatmap-download-info .fa-solid {
+  margin-right: 0.5rem;
+}
+
+.fa-download,
+.fa-circle-info,
+.beatmap-download,
+.beatmap-page {
+  transition: 0.1s ease-in;
+}
+
+.beatmap-download:hover {
+  cursor: pointer;
+  color: #6dd2fd;
+}
+
+.beatmap-download:hover > .fa-download {
+  color: #6dd2fd;
+}
+
+.beatmap-page:hover {
+  cursor: pointer;
+  color: #6dd2fd;
+}
+
+.beatmap-page:hover > .fa-circle-info {
+  color: #6dd2fd;
+}
+
+.complete-text {
+  width: 6rem;
+  transition: 0.1s ease-in;
+}
+
+@media screen and (max-width: 500px) {
+  .beatmap-complete {
+    left: 2.5vw;
+  }
+
+  .beatmap-download-info {
+    right: 10%;
+  }
+}

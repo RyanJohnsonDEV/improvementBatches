@@ -1,0 +1,91 @@
+.beatmap {
+  border-radius: 10px;
+  color: white;
+  padding: 0 0;
+  width: clamp(300px, 500px, 500px);
+  margin-top: 1rem;
+  background-color: #394246;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  height: 130px;
+}
+
+.details-container {
+  width: 100%;
+}
+
+.main-photo {
+  height: 100%;
+  width: 30%;
+  object-fit: cover;
+  font-size: 10px;
+  color: gray;
+}
+
+.bg-photo {
+  height: 100%;
+  width: 68%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 10%;
+  z-index: 1;
+  border-radius: 10px;
+  color: transparent;
+}
+
+.title-name {
+  font-weight: bold;
+  text-align: left;
+  align-items: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 80%;
+}
+
+.diff-name {
+  position: absolute;
+  bottom: 5%;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 60%;
+}
+
+.title-name,
+.diff-name {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 1rem;
+  z-index: 2;
+}
+
+.diff-color {
+  background-image: linear-gradient(
+    to left,
+    black 15%,
+    #9290fc 35%,
+    #c645b8 45%,
+    #ff4e6f 55%,
+    #f6f05c 68%,
+    #7cff4f 75%,
+    #4fc0ff 85%
+  );
+
+  background-clip: text;
+  color: transparent !important;
+  background-size: 100000%;
+}
+
+@media screen and (max-width: 500px) {
+  .beatmap {
+    width: 95vw;
+  }
+}

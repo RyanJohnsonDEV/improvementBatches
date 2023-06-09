@@ -1,0 +1,49 @@
+.header {
+  text-align: center;
+
+  padding-top: 1rem;
+  color: white;
+  margin-bottom: 2rem;
+  background-color: #1f292e;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid white;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.header-content {
+  position: relative;
+  z-index: 5;
+}
+
+.by-me {
+  position: relative;
+  top: -1rem;
+  color: #6dd2fd;
+  font-weight: bold;
+}
+
+.by-me a {
+  color: #6dd2fd;
+  text-decoration: none;
+}
+
+.by-me a:hover {
+  color: #3e98be;
+  text-decoration: underline;
+}
+
+.red-text {
+  color: rgb(255, 104, 104);
+  font-weight: bold;
+}
+
+.header-bg {
+  filter: hue-rotate(195deg) saturate(0.6);
+  opacity: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
