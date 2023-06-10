@@ -1,6 +1,8 @@
 
 # Improvement Batches
 
+![](https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png)
+
 ### Website URL: https://improvementbatches.netlify.app/
 
 
