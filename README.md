@@ -1,8 +1,6 @@
 
 # Improvement Batches
 
-![](https://www.shareicon.net/data/256x256/2016/07/08/117367_logo_512x512.png)
-
 ### Website URL: https://improvementbatches.netlify.app/
 
 
