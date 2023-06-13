@@ -1,5 +1,5 @@
 
-# Improvement Batches
+# Improvement Batches for osu!
 
 ### Website URL: https://improvementbatches.netlify.app/
 
